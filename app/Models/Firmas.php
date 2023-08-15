@@ -18,6 +18,6 @@ class Firmas extends Model
         'facebook',
         'linkedin',
         'instagram',
-        'twitter'
+        'tiktok'
     ];
 }

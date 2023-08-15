@@ -10,7 +10,14 @@
                 @foreach($folders as $folder)
                 <div class="row" id="show_row_{{ $folder->id }}">
                     <div class="col-12">
-                        <h2>{{ $folder->name }}</h2>
+                        <h2>{{ $folder->name }} 
+                            @if($folder->description != null)
+                                <div class="tooltip">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                  <span class="tooltiptext">{{ $folder->description }}</span>
+                                </div>
+                            @endif
+                        </h2>
                         @if($folder->id === 1 || $folder->id === 3)
                             <a href="#" id="showAll_{{ $folder->id }}" class="all_show">Ver todo</a>
                         @endif

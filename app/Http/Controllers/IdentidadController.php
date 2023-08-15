@@ -475,7 +475,7 @@ class IdentidadController extends Controller
             'facebook' => $request->facebook,
             'linkedin' => $request->linkedin,
             'instagram' => $request->instagram,
-            'twitter' => $request->twitter,
+            'tiktok' => $request->twitter,
         ]);
 		return view("identidad_digital",['url'=>$firma]);
 	}
